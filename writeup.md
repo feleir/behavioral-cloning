@@ -1,11 +1,5 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Behavioral Cloning Project**
 
 The goals / steps of this project are the following:
@@ -128,31 +122,39 @@ To capture good driving behavior I recorded the following laps:
 
 The data used was coming from the center, right and left cameras:
 
-| Left        | Center         | Right        |
-|![left][left]|[center][center]|[right][right]|
+| Left        | Center          | Right         |
+|-------------|-----------------|---------------|
+|![left][left]|![center][center]|![right][right]|
 
+to gather more training data and prevent from steering angle bias, the images were flipped too:
 
-, I first recorded one lap driving on the center lane, another one driving close to the edge
-o laps on track one using center lane driving. Here is an example image of center lane driving:
+| Left        | Center          | Right         |
+|-------------|-----------------|---------------|
+|![flippedleft][flippedleft]|![flippedcenter][flippedcenter]|![flippedright][flippedright]|
 
-![alt text][image2]
+And converted to RGB which had an impact of the model training:
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+| Left        | Center          | Right         |
+|-------------|-----------------|---------------|
+|![rgbleft][rgbleft]|![rgbcenter][rgbcenter]|![rgbright][rgbright]|
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+to reduce training time the images were cropped to only feed important data to the model:
 
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
+| Left        | Center          | Right         |
+|-------------|-----------------|---------------|
+|![croppedleft][croppedleft]|![croppedcenter][croppedcenter]|![croppedright][croppedright]|
 
 I finally randomly shuffled the data set and put Y% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 50 as evidenced by the changes in the validation loss during training. 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+The video can be checked [here](https://github.com/feleir/behavioral-cloning/blob/master/video.mp4?raw=true)
+
+<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+
+<video id="pelican-installation" class="video-js vjs-default-skin" controls
+preload="auto" width="683" height="384" poster="/static/screencasts/pelican-installation.png"
+data-setup="{}">
+<source src="https://github.com/feleir/behavioral-cloning/blob/master/video.mp4?raw=true4" type='video/mp4'>
+</video>
