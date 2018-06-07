@@ -13,7 +13,6 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-
 [//]: # (Image References)
 
 [center]: ./images/center.png "Center"
@@ -28,6 +27,11 @@ The goals / steps of this project are the following:
 [rgbcenter]: ./images/rgbcenter.png "RGB center"
 [rgbright]: ./images/rgbright.png "RGB right"
 [rgbleft]: ./images/rgbleft.png "RGB left"
+[gif]: ./images/video.gif "Video result"
+
+The video results can be checked [here](https://github.com/feleir/behavioral-cloning/blob/master/video.mp4?raw=true)
+
+![Autonomous mode][gif]
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -152,16 +156,6 @@ I finally randomly shuffled the data set and put Y% of the data into a validatio
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 50 as evidenced by the changes in the validation loss during training. 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
-
-The video can be checked [here](https://github.com/feleir/behavioral-cloning/blob/master/video.mp4?raw=true)
-
-<script src="http://vjs.zencdn.net/4.0/video.js"></script>
-
-<video id="pelican-installation" class="video-js vjs-default-skin" controls
-preload="auto" width="683" height="384" poster="/static/screencasts/pelican-installation.png"
-data-setup="{}">
-<source src="https://github.com/feleir/behavioral-cloning/blob/master/video.mp4?raw=true4" type='video/mp4'>
-</video>
 
 ### Dependencies
 This lab requires:
