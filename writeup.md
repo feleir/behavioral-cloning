@@ -18,18 +18,18 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[center]: ./examples/center.png "Center"
-[right]: ./examples/right.png "Right"
-[left]: ./examples/left.png "Left"
-[flippedcenter]: ./examples/flippedcenter.png "Flipped center"
-[flippedright]: ./examples/flippedright.png "Flipped right"
-[flippedleft]: ./examples/flippedleft.png "Flipped left"
-[croppedcenter]: ./examples/croppedcenter.png "Cropped center"
-[croppedright]: ./examples/croppedright.png "Cropped right"
-[croppedleft]: ./examples/croppedleft.png "Cropped left"
-[rgbcenter]: ./examples/rgbcenter.png "RGB center"
-[rgbright]: ./examples/rgbright.png "RGB right"
-[rgbleft]: ./examples/rgbleft.png "RGB left"
+[center]: ./images/center.png "Center"
+[right]: ./images/right.png "Right"
+[left]: ./images/left.png "Left"
+[flippedcenter]: ./images/flippedcenter.png "Flipped center"
+[flippedright]: ./images/flippedright.png "Flipped right"
+[flippedleft]: ./images/flippedleft.png "Flipped left"
+[croppedcenter]: ./images/croppedcenter.png "Cropped center"
+[croppedright]: ./images/croppedright.png "Cropped right"
+[croppedleft]: ./images/croppedleft.png "Cropped left"
+[rgbcenter]: ./images/rgbcenter.png "RGB center"
+[rgbright]: ./images/rgbright.png "RGB right"
+[rgbleft]: ./images/rgbleft.png "RGB left"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
