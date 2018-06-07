@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[center]: ./images/center.jpg "Center"
+[center]: ./images/center.png "Center"
 [right]: ./images/right.png "Right"
 [left]: ./images/left.png "Left"
 [flippedcenter]: ./images/flippedcenter.png "Flipped center"
